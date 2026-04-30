@@ -1,56 +1,110 @@
-# Welcome to MakroZone app 👋
+# 🍽️ MakroZone
 
-The project is a simple macro tracking app called MakroZone that allows users to add meals and track their macros (calories, protein, carbs, fat). The app has a home screen that displays the current date, a grid of macro cards showing the total macros for the day, and a list of recent meals. There is also a screen for adding new meals and a screen for viewing all meals.
+[![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev)
+[![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-## Get started
+> Aplicativo mobile para controle de macros e alimentação diária
 
-1. Install dependencies
+MakroZone é um aplicativo de rastreamento de macronutrientes que permite aos usuários registrar refeições e monitorar suas métricas diárias de nutrição (calorias, proteínas, carboidratos e gorduras).
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 📱 Funcionalidades
 
-   ```bash
-   npx expo start
-   ```
+- **Dashboard Personalizado** - Visualize a data atual e resumo dos macros do dia
+- **Cards de Macros** - Grid intuitivo mostrando totais de calorias, proteínas, carboidratos e gorduras
+- **Registro de Refeições** - Adicione novas refeições com seus respectivos valores nutricionais
+- **Histórico de Refeições** - Lista de refeições recentes e visão completa de todas as refeições
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Tecnologias
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+| Tecnologia | Descrição |
+|------------|-----------|
+| **Expo** | Framework e plataforma para desenvolvimento React Native universal |
+| **React Native** | Framework para construção de aplicativos mobile nativos |
+| **TypeScript** | Superset JavaScript com tipagem estática |
+| **Expo Router** | Sistema de roteamento baseado em arquivos |
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🚀 Começando
+
+### Pré-requisitos
+
+- Node.js (versão 18+)
+- npm ou yarn
+- Expo CLI
+
+### Instalação
 
 ```bash
-npm run reset-project
+# Clonar o repositório
+git clone https://github.com/seu-usuario/makrozone.git
+
+# Entrar no diretório
+cd makrozone
+
+# Instalar dependências
+npm install
+
+# Iniciar o projeto
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Opções de Execução
 
-### Other setup steps
+Após iniciar o projeto, escolha uma opção:
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+- 📱 **Expo Go** - Sandbox limitado para testes rápidos
+- 🤖 **Android Emulator** - Execute no Android Studio
+- 🍎 **iOS Simulator** - Execute no Xcode (macOS)
+- 🏗️ **Development Build** - Build de desenvolvimento completo
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📁 Estrutura do Projeto
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```
+makrozone/
+├── app/                    # Arquivos de rotas e telas (Expo Router)
+│   ├── _layout.tsx         # Layout principal
+│   ├── index.tsx           # Tela inicial (Dashboard)
+│   ├── add-meal.tsx        # Tela de adicionar refeição
+│   └── meals.tsx           # Tela de listar refeições
+├── components/            # Componentes reutilizáveis
+├── constants/             # Constantes e configurações
+├── types/                 # Definições de tipos TypeScript
+└── utils/                  # Funções utilitárias
+```
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 🤝 Contribuição
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Contribuições são bem-vindas! Siga os passos:
+
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -m 'Add nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+
+## 👤 Autor
+
+**Marcio Nitao** - [GitHub](https://github.com/seu-usuario)
+
+---
+
+*Desenvolvido com ❤️ usando Expo e React Native*
