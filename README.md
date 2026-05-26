@@ -24,6 +24,7 @@ MakroZone é um aplicativo de rastreamento de macronutrientes que permite aos us
 
 | Tecnologia | Descrição |
 |------------|-----------|
+
 | **Expo** | Framework e plataforma para desenvolvimento React Native universal |
 | **React Native** | Framework para construção de aplicativos mobile nativos |
 | **TypeScript** | Superset JavaScript com tipagem estática |
@@ -68,7 +69,7 @@ Após iniciar o projeto, escolha uma opção:
 
 ## 📁 Estrutura do Projeto
 
-```
+```bash
 makrozone/
 ├── app/                    # Arquivos de rotas e telas (Expo Router)
 │   ├── _layout.tsx         # Layout principal
@@ -107,4 +108,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para de
 
 ---
 
-*Desenvolvido com ❤️ usando Expo e React Native*
+Desenvolvido com ❤️ usando Expo e React Native
