@@ -1,16 +1,16 @@
-import { colors } from '@/styles/global';
-import { Stack } from 'expo-router';
+import { globalStyles } from '@/styles/global';
+import { Link } from 'expo-router';
+import { ScrollView, Text } from 'react-native';
+import HomeHeader from '../components/HomeHeader';
 
-export default function RootLayout() {
+export default function HomeScreen() {
   return (
-    <Stack
-      screenOptions={{
-        headerStyle: { backgroundColor: colors.header },
-        headerTintColor: '#fff',
-      }}
-    >
-      <Stack.Screen name='index' options={{ headerShown: false, title: 'Home' }} />
-      <Stack.Screen options={{ title: 'Meals' }} name='meals' />
-    </Stack>
+    <ScrollView style={globalStyles.container}>
+      <Text style={globalStyles.title}>MacroZone</Text>
+      <HomeHeader />
+      <Link href='/meals' style={{ fontSize: 18, color: '#007bff' }}>
+        Go to Meals
+      </Link>
+    </ScrollView>
   );
 }
