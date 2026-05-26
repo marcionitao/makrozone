@@ -5,6 +5,7 @@
 ---
 
 ## Stack do projeto
+
 - **React Native** + **Expo** (SDK 55)
 - **Expo Router** (roteamento baseado em arquivos em `src/app/`)
 - **TypeScript** (com `tsconfig.json` e strict mode)
@@ -15,6 +16,7 @@
 ---
 
 ## Estrutura de pastas (obrigatória)
+
 - `src/app/` → rotas do Expo Router (`_layout.tsx`, `index.tsx`, `explore.tsx`, etc.)
 - `src/components/` → componentes reutilizáveis
 - `src/constants/` → constantes e configurações
@@ -40,6 +42,7 @@
 **NUNCA apliques uma edição sem confirmação explícita do utilizador.**
 
 O fluxo obrigatório é:
+
 1. Mostra o diff (antes/depois)
 2. Pergunta explicitamente: `"Posso aplicar esta alteração? (sim/não)"`
 3. Aguarda resposta
@@ -72,6 +75,7 @@ O fluxo obrigatório é:
 ---
 
 ## Comandos úteis (npm scripts)
+
 - `npm start` → inicia o Metro bundler + QR Code
 - `npm run android` → roda no emulador/dispositivo Android
 - `npm run ios` → roda no simulador/dispositivo iOS
@@ -81,6 +85,7 @@ O fluxo obrigatório é:
 ---
 
 ## Fluxo de trabalho recomendado
+
 1. Crie branch: `feature/nome-da-feature` ou `fix/nome-do-bug`
 2. Faça as alterações
 3. Rode `npm run lint`
@@ -111,6 +116,7 @@ O fluxo obrigatório é:
 ---
 
 ## Dicas extras
+
 - Consulte `README.md` para funcionalidades do projeto
 - Estrutura atual das telas em `src/app/`:
   - `_layout.tsx` - Layout principal
