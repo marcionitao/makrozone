@@ -1,20 +1,16 @@
-import { globalStyles } from '@/styles/global';
-import { StyleSheet, Text, View } from 'react-native';
+import { colors } from '@/styles/global';
+import { Stack } from 'expo-router';
 
-export default function Home() {
+export default function RootLayout() {
   return (
-    <View style={globalStyles.container}>
-      <Text style={globalStyles.title}>MacroZone</Text>
-      <Text style={styles.date}>Monday, March 16</Text>
-    </View>
+    <Stack
+      screenOptions={{
+        headerStyle: { backgroundColor: colors.header },
+        headerTintColor: '#fff',
+      }}
+    >
+      <Stack.Screen name='index' options={{ headerShown: false, title: 'Home' }} />
+      <Stack.Screen options={{ title: 'Meals' }} name='meals' />
+    </Stack>
   );
 }
-
-const styles = StyleSheet.create({
-  date: {
-    fontSize: 14,
-    color: '#a0a0b0',
-    marginTop: 4,
-    marginBottom: 30,
-  },
-});
